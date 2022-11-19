@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+html {
+    background: url(https://i.ibb.co/W2KG4w0/dance-1940245.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    color: #ddd;
+  }
+
+  p {
+    margin: 0.5em 0 0.5em 0;
+  }
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 10px 0 0 0;
+    position: top;
+}
+
+h1 {
+  color:#ffffff;
+  margin: 10px auto 10px auto;
+}
+
+td, th {
+  padding: 10px;
+}
+
+tr:hover {
+  background-color: #2c3e50;
+  color:#ffffff
+}
+
+tr {
+  transition: all ease 300ms;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+margin:  10px auto;
+
+}
+ 
+table thead {
+  background-color: #91061b;
+  border: 1px solid rgb(226, 226, 226);
+  color: #ffffff;
+}
+
+table tbody {
+  background-color: #ffffff;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color:#ffffff;
+  cursor: pointer;
+}
+
+iframe {
+  border: 1px solid black;
+  
+  margin: 10px auto 10px auto;
+}
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+    
+  }
+
+/*NAVBAR */
+.nav-padre {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topnav-right {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: right;  
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #575353;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+ .topnav-right a {
+  float: right;
+  color: #575353;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover, .topnav-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #91061b;
+  color: white;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.logo {
+  height: 60px;
+  margin-left: 25px;
+  border-radius: 50%;
+  transition: transform .75s;
+  text-align: initial;
+}
+.logo:hover {
+  transform:scale(1.45);
+  
+}
+nav a:visited,
+nav a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul {
+    display: inline;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 5px;
+}
+
+nav > div { 
+    display: inline-block;
+}
+
+
+/* FOOTER */
+
+footer {  
+  color: #ffffff;
+  display: flex;
+  background: linear-gradient(0deg, #91061b 15%, rgba(207,70,211,0) 78%);
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  width: 100%;
+  
+}
+
+.logo-footer {
+  margin-top: 50px;
+  margin-left: 25px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.nosotros, .siguenos{
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.siguenos h2,.nosotros h1{
+font-size: 12px;
+}
+
+.siguenos-iconos{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.siguenos-iconos a{
+  font-size: 22px;
+  color: #ddd;
+}
+.siguenos-iconos a:hover{
+color: rgb(25, 163, 255);
+}
+
+
+
+  @media (max-width: 768px) {
+   
+    .topnav-right {
+      display: none;
+    }
+    .logo-footer{
+      display: none;
+    }
+    .siguenos h2,.nosotros h1{
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    .logo{
+      position: relative;
+      top:5px;
+      left: 38vw;
+    }
+    
+    .list-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #2c3e50;
+      position: fixed;
+      top: 70px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.8s;
+    }
+     .nav-toggle {
+      right: 15px;
+      top: 10px;
+      position: fixed;
+      display:block;
+    }
+    .nav-menu_visible {
+      left: 0%
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+
+  .centro img{
+    width: 49%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+  }
+
+  /* Galeria de artistas */
+
+  .galeria-artistas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .separador1 {
+    height: 500px;
+  }
+  
+  .centro img{
+    width: 49%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+  }
+  .separador1{
+    height: 16px;
+    clear: both;
+  }
+  .separador2{
+    width: 2%;
+    height: 1px;
+    float: left;  
+  }
+
+  div img{
+  width: 40%;
+  float: left;
+  border-radius: 20px;
+  }
+  
+  img {
+    transition: all 0.5s ease;
+  }
+
+  img:hover {
+    transform: scale(0.9);
+  }
+
+  /*EVENTOS*/ 
+
+  .formulario-eventos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    color: #2c3e50;
+  }
+
+  /* CONTACTO */
+
+.contacto{
+  display:flex;
+  width: 80vw ;
+  margin-bottom: 20vh;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 0;
+  color:#2c3e50;
+  font-size: 12px;
+  overflow: auto;
+  
+}
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+  width: 100%;  
+}
+
+
+.form-group {
+  margin: 10px;
+  padding: 2%;
+}
+
+.contact-info {
+  margin: 20px;
+}
+
+.boton-enviar {
+  
+  background-color: #2c3e50;
+  border: 2px solid #000000;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+  
+  .boton-enviar:hover {
+    background-color: #91061b;
+  color: white;
+  }
+
+
+.container-mapa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%; 
+}

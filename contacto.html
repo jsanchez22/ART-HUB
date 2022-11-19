@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CONTACTO</title>
+    <link rel="shortcut icon" href="ART.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script defer src="index.js"></script>
+
+    <script src="https://kit.fontawesome.com/3671432187.js" crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/67f5b40d62.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-padre">
+        <img class="logo" src="ART.png" id="logo" class="animate__animated animate__flash">
+        <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+        <div class="topnav">
+            <ul class="list-menu">
+                <li><a  href="index.html">Inicio</a></li>
+                <li><a href="artistas.html"><i class="fa fa-users"></i> Artistas</a></li>
+                <li><a href="eventos.html"><i class="fa fa-calendar"></i> Eventos</a></li>
+                <li><a href="contacto.html"><i class="fa fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </div>
+        <!-- <div class="topnav-right">
+            <ul>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram w3-hover-opacity"></i></a></li>
+                <li><a href="https://www.github.com/"><i class="fa fa-github w3-hover-opacity"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fa fa-twitter w3-hover-opacity"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin w3-hover-opacity"></i></a></li>
+            </ul>
+        </div> -->
+        </nav>
+        
+    </header>
+   
+
+
+
+    <main class="contacto-main">
+        <h1> Contacto</h1>
+
+        <section class="contacto" id="contact">
+            <div class="formulario-contacto" >
+                <div>
+                <h2 style="padding-top: 20px"><i class="fa-solid fa-file-signature"></i><strong > Contactanos</strong></h2>
+            </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="contact-info">
+                
+                            <h4>Envianos tu mensaje</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="contact-form">
+                            <form action="https://formspree.io/f/xoqbvvky" target="_blank" method="POST">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="nombre">Nombre:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre"
+                                        name="fname">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="email">E-mail:</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="email" placeholder="Ingrese su E-mail" name="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="object">Asunto:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="object" placeholder="Ingrese el asunto"
+                                        name="object">
+                                </div>
+                            </div>
+                          
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="comment">Mensaje:</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="boton-enviar">
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </div>
+                            
+                            
+                               
+                            
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-mapa">
+                <h2 style="padding: 20px"><i class="fa-solid fa-map-location-dot"></i><strong> Cómo llegar</strong></h2>
+
+                <h4 style="padding: 10px"><strong >Av. San Martín y Sarmiento N 3298. San Fernando del Valle de Catamarca. Argentina </strong></h4>
+                <iframe id="inlineFrameExample"
+                title="Inline Frame Example"
+                width="300"
+                height="300"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-65.78154623508455%2C-28.470707257124776%2C-65.77800571918489%2C-28.46855218291563&amp;layer=mapnik">
+                </iframe>
+            </div>
+        
+        </section>
+        
+
+    </main>
+
+    <footer>
+        
+        <img class="logo-footer" src="ART.png">
+
+        <div class="nosotros">
+            <h1>SOBRE NOSOTROS</h1>
+            <p class="parrafo-footer">Nos dedicamos a compartir información de artistas y eventos culturales</p>
+        </div>
+        
+        <div class="siguenos">
+            <h5>SEGUINOS EN</h5>
+            <ul class="siguenos-iconos">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram w3-hover-opacity"></i></a></li>
+                <li><a href="https://github.com/maiizaguirre/tp-codo-a-codo"><i class="fa fa-github w3-hover-opacity"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fa fa-twitter w3-hover-opacity"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin w3-hover-opacity"></i></a></li>
+            </ul>
+        </div>
+        
+       
+    </footer>
+</body>
+</html>
